@@ -11,8 +11,9 @@ body {
   width: 100%;
 }
 
+/*---------header-----------*/
 .container-header {
-  background: url(../img/bkg.jpg);
+  background: url(img/bkg.jpg);
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
@@ -20,38 +21,49 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  position: relative;
-  padding-top: 1em;
 
 
+}
 
+.button-menu-open {
+  margin: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 .ham {
   position: absolute;
-  display: inline-block;
-  background: url(img/burg.png);
+  background: url(../img/burg.png)0 0;
   width: 32px;
   height: 32px;
   background-position: left top;
-
-  top: 26px;
+  top: 28px;
   right: 0;
 
 }
 
-.open {
+.button-menu-open {
+  text-align: right;
+}
+
+.button-menu-open a {
   display: inline-block;
-  margin-right: 40px;
+
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5em;
+  padding-bottom: 10px;
 
 }
 
-.open h2 {
-  font-weight: 200;
-  font-size: 85%
+
+
+.button-menu-close {
+
+  margin: 10px 0;
+  padding-right: 40px;
 }
 
-.button-open {
+.button-menu-close a {
   display: block;
   text-align: right;
   text-decoration: none;
@@ -59,17 +71,60 @@ body {
   font-size: 1.5em;
   padding-bottom: 10px;
   padding-left: 40px;
-  /* background-color: beige;*/
+}
+
+.button-menu-open a:hover,
+.button-menu-close a:hover {
+  opacity: 0.5;
+}
+
+.close .ham {
+  background-position: left bottom;
+  top: 6px;
+  right: 1px;
+}
+
+.menu-plein-ecran {
+  background-color: hsl(163, 27.7%, 32%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.menu-plein-ecran:target {
+  display: block;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 3em;
 
 }
 
-.header-content {
+.main-menu li {
+  margin-top: 8vh;
+
+}
+
+#header {
   position: absolute;
-  top: 25em;
-
+  top: 60vh;
+  left: 10vw;
 }
 
-.header-content h1 {
-  font-size: 1.5em;
-  font-weight: bold;
+#header h1 {
+  font-size: 7vh;
+}
+
+#header h2 {
+  font-size: 3vh;
+  opacity: 80%;
+  font-weight: 500;
+
 }
