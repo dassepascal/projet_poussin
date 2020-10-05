@@ -1,0 +1,116 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.container-header {
+  background: url(../img/bkg.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 1em;
+}
+
+.ham {
+  position: absolute;
+  display: inline-block;
+  background: url(img/burg.png);
+  width: 32px;
+  height: 32px;
+  background-position: left top;
+  top: 26px;
+  right: 0;
+}
+
+.open {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.open h2 {
+  font-weight: 200;
+  font-size: 85%;
+}
+
+.button-open {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  /* background-color: beige;*/
+}
+
+.header-content {
+  position: absolute;
+  top: 25em;
+}
+
+.header-content h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
