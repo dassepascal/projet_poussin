@@ -21,12 +21,13 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  position: relative;
 
 
 }
 
 .button-menu-open {
-  margin: 1.2rem;
+  /*margin: 1.2rem;*/
   padding-right: 1.2rem;
 }
 
@@ -36,13 +37,23 @@ body {
   width: 32px;
   height: 32px;
   background-position: left top;
-  top: 28px;
-  right: 0;
+  top: 1.2rem;
+  right: -26px;
 
 }
 
 .button-menu-open {
   text-align: right;
+  position: absolute;
+  right: 10px;
+
+}
+
+.open h2 {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+
 }
 
 .button-menu-open a {
@@ -52,6 +63,8 @@ body {
   color: #000;
   font-size: 1.5em;
   padding-bottom: 10px;
+  position: absolute;
+
 
 }
 
@@ -114,17 +127,18 @@ body {
 
 #header {
   position: absolute;
-  top: 60vh;
-  left: 10vw;
+  top: 51vh;
+  left: 4vw;
 }
 
 #header h1 {
-  font-size: 7vh;
+  font-size: 210%;
+  font-weight: bold;
 }
 
 #header h2 {
-  font-size: 3vh;
-  opacity: 80%;
-  font-weight: 500;
+  font-size: 110%;
+
+  font-weight: bold;
 
 }
