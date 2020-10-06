@@ -255,11 +255,124 @@ article h2 {
 }
 
 /*fin grille*/
+
+/*contact*/
+.contact {
+
+
+  background: url(img/bkg-form.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 2em 0 1em 0.5em;
+
+
+}
+
+.formulaire {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.heading h1 {
+  color: #669;
+
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+#formulaire {
+
+  max-width: 900px;
+}
+
+#formulaire-container {
+  max-width: 900px;
+  padding: 1.2em;
+  margin: 0 auto;
+
+  border-radius: 15px;
+  background-color: rgba(250, 250, 250, 0.5);
+
+}
+
+textarea {
+  height: 30vh;
+
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+
+  display: block;
+  padding: 10px 0;
+
+}
+
+.button {
+  text-align: center;
+  padding: 5px;
+  display: block;
+  padding: 10px;
+
+
+}
+
+.btn1,
+.btn2 {
+  padding: 1em;
+
+
+}
+
+input[type=text],
+input[type=phone],
+input[type=email],
+textarea {
+
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+
+
+}
+
+input[type=submit],
+input[type=reset] {
+  width: 8em;
+  border-radius: 25px;
+  padding: 0.5vw;
+  background: linear-gradient(#b9bbde, #669);
+  color: #fff;
+  font-size: 1.2em;
+
+  &:hover {
+    background: linear-gradient(#666, #444);
+  }
+}
+
+
+
+label {
+  color: #669;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+
+/*foooter*/
 @media screen and (min-width:740px) {
   .flex-container {
-
     flex-flow: row wrap;
-
   }
 
   article h2 {
@@ -268,33 +381,31 @@ article h2 {
     margin-bottom: 2%;
   }
 
-  input[type=text],
-  input[type=phone],
-  input[type=email],
-  textarea {
-    display: block;
-    width: 50%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 0.5px solid rgba(0, 0, 0, 0.4);
-  }
-
-  .top,
-  .bottom {
+  #formulaire-flex {
     display: flex;
-    margin: 0 1em;
+    flex-flow: row wrap;
+    float: basis 100px;
   }
 
-  /* .item1,
-
-  .item3 {
+  .formulaire {
     width: 50%;
-    padding: 10px 5vw;
-  }*/
 
-  #formulaire {
-    margin: 0 auto;
   }
+
+  .formulaire:first-child {
+
+    padding-right: 2em;
+  }
+
+  .formulaire:nth-child(2) {
+
+    padding-left: 2em;
+  }
+
+
+
+
+
 
 
 
@@ -352,10 +463,7 @@ article h2 {
 
 @media screen and (min-width:1628px) {
 
-  #formulaire {
-    max-width: 900px;
-    margin: 0 auto;
-  }
+
 
 
   .l-col-1 {
@@ -408,110 +516,3 @@ article h2 {
 
 
 }
-
-/*contact*/
-.contact {
-
-
-  background: url(img/bkg-form.jpg);
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  padding: 2em 0 1em 0.5em;
-
-
-}
-
-.heading h1 {
-  color: #669;
-  padding: 0.5em;
-  font-weight: bold;
-  font-size: 1.7em;
-}
-
-#formulaire {
-  max-width: 900px;
-  padding: 1.2em;
-  margin: 0 auto;
-
-  border-radius: 15px;
-  background-color: rgba(250, 250, 250, 0.5);
-
-
-
-}
-
-textarea {
-  height: 30vh;
-
-}
-
-.item1,
-.item2,
-.item3,
-.item4 {
-  width: 100%;
-  padding: 0 10px 10px 10px;
-
-  display: block;
-  padding: 10px 0;
-
-}
-
-.button {
-  text-align: center;
-  padding: 5px;
-  display: block;
-  padding: 10px;
-
-
-}
-
-.btn1,
-.btn2 {
-  padding: 1em;
-
-
-}
-
-input[type=text],
-input[type=phone],
-input[type=email],
-textarea {
-
-  display: block;
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 0.5px solid rgba(0, 0, 0, 0.4);
-
-
-}
-
-input[type=submit],
-input[type=reset] {
-  width: 15em;
-  border-radius: 25px;
-  padding: 0.5vw;
-  background: linear-gradient(#b9bbde, #669);
-  color: #fff;
-  font-size: 1.2em;
-
-  &:hover {
-    background: linear-gradient(#666, #444);
-  }
-}
-
-
-
-label {
-  color: #669;
-  font-weight: bold;
-  display: block;
-  padding: 10px 0;
-}
-
-/*foooter*/
