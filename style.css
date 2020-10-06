@@ -286,8 +286,8 @@ article h2 {
 
 /*fin grille*/
 /*contact*/
-.contact {
-  background: url(img/bkg-form.jpg);
+#contact {
+  background: url(../img/bkg-form.jpg);
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
