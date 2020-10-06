@@ -176,30 +176,31 @@
       </article>
     </section>
     <section class="contact">
-      <div id="formulaire">
-        <div class="heading">
+      <div id="formulaire-container">
+        <div class="heading ">
           <h1>Contactez nous</h1>
         </div>
+        <div id="formulaire-flex">
+          <div class="formulaire top ">
 
-        <div class="formulaire top">
-
-          <div class="item1">
-            <label for="nom">Nom *:</label>
-            <input type="text" name="nom" placeholder="Entrer votre nom">
+            <div class="item1">
+              <label for="nom">Nom *:</label>
+              <input type="text" name="nom" placeholder="Entrer votre nom">
+            </div>
+            <div class="item2">
+              <label for="telephone">Téléphone</label>
+              <input type="phone" name="phone" id="phone" placeholder="Indiquez votre numero de telephone">
+            </div>
           </div>
-          <div class="item2">
-            <label for="telephone">Téléphone</label>
-            <input type="phone" name="phone" id="phone" placeholder="Indiquez votre numero de telephone">
-          </div>
-        </div>
-        <div class="formulaire bottom">
-          <div class="item3">
-            <label for="email">Email :</label>
-            <input type="email" name="email" placeholder="Votre email">
-          </div>
-          <div class="item4">
-            <label for="message">Message :</label>
-            <textarea name="message" id="message" placeholder="Laissez nous un message"></textarea>
+          <div class="formulaire bottom">
+            <div class="item3">
+              <label for="email">Email :</label>
+              <input type="email" name="email" placeholder="Votre email">
+            </div>
+            <div class="item4">
+              <label for="message">Message :</label>
+              <textarea name="message" id="message" placeholder="Laissez nous un message"></textarea>
+            </div>
           </div>
         </div>
         <div class="button">
