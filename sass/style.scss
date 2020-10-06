@@ -13,8 +13,7 @@ body {
 
 /*---------header-----------*/
 .container-header {
-  background: url(img/bkg.jpg);
-  background-position: top center;
+  background: url(../img/bkg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -27,8 +26,14 @@ body {
 }
 
 .button-menu-open {
-  /*margin: 1.2rem;*/
-  padding-right: 1.2rem;
+  text-align: right;
+  position: absolute;
+  right: 9px;
+  width: 109px;
+  height: 49px;
+  padding-right: 4px;
+  display: inline-block;
+  margin-right: -4px;
 }
 
 .ham {
@@ -38,20 +43,15 @@ body {
   height: 32px;
   background-position: left top;
   top: 1.2rem;
-  right: -26px;
+  right: -9px;
 
 }
 
-.button-menu-open {
-  text-align: right;
-  position: absolute;
-  right: 10px;
 
-}
 
 .open h2 {
   position: absolute;
-  right: 1rem;
+  right: 2rem;
   top: 0.7rem;
 
 }
@@ -64,6 +64,16 @@ body {
   font-size: 1.5em;
   padding-bottom: 10px;
   position: absolute;
+
+  &:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    -webkit-transition: opacity 2s ease-out;
+    -moz-transition: opacity 2s ease-out;
+    -o-transition: opacity 2s ease-out;
+    transition: opacity 2s ease-out;
+
+  }
 
 
 }
@@ -84,12 +94,16 @@ body {
   font-size: 1.5em;
   padding-bottom: 10px;
   padding-left: 40px;
+
+  &:hover {
+    opacity: 0.4;
+    cursor: pointer;
+
+    transition: opacity 2s ease-out;
+  }
 }
 
-.button-menu-open a:hover,
-.button-menu-close a:hover {
-  opacity: 0.5;
-}
+
 
 .close .ham {
   background-position: left bottom;
@@ -158,7 +172,7 @@ article h2 {
   margin-top: 3%;
   margin-bottom: 3%;
   font-weight: normal;
-  font-size: 9vw;
+  font-size: 4vw;
 }
 
 .flex-container {
@@ -299,7 +313,7 @@ article h2 {
 }
 
 textarea {
-  height: 30vh;
+  height: 20vh;
 
 }
 
@@ -406,7 +420,7 @@ label {
   justify-content: space-between;
   flex-flow: column wrap;
   padding: 1.1875rem;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -426,7 +440,7 @@ label {
   #formulaire-flex {
     display: flex;
     flex-flow: row wrap;
-    float: basis 100px;
+
   }
 
   .formulaire {
@@ -450,7 +464,7 @@ label {
   }
 
   .main-footer li {
-    margin-bottom: 0.2;
+    margin-bottom: 0.2em;
     margin-left: 1em;
     min-width: 26%;
     flex: 0 1 33%;
@@ -458,6 +472,7 @@ label {
 
   .flex-container-footer {
     flex-flow: row wrap;
+    margin: 0 auto;
   }
 }
 
