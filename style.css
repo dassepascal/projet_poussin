@@ -516,11 +516,6 @@ label {
     align-self: flex-start;
   }
 
-  .main-footer ul {
-    margin: 0;
-    width: 96%;
-  }
-
   .main-footer li {
     margin-bottom: 0.2em;
     margin-left: 1em;
